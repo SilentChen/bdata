@@ -1,0 +1,13 @@
+[2019-03-16 15:55:29,982] INFO Reading configuration from: kafka/config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2019-03-16 15:55:30,058] INFO Resolved hostname: bdata_master to address: bdata_master/192.168.1.200 (org.apache.zookeeper.server.quorum.QuorumPeer)
+[2019-03-16 15:55:30,059] INFO Resolved hostname: bdata_slave1 to address: bdata_slave1/192.168.1.103 (org.apache.zookeeper.server.quorum.QuorumPeer)
+[2019-03-16 15:55:30,059] WARN No server failure will be tolerated. You need at least 3 servers. (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2019-03-16 15:55:30,059] ERROR Invalid config, exiting abnormally (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing kafka/config/zookeeper.properties
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:156)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:104)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:81)
+Caused by: java.lang.IllegalArgumentException: initLimit is not set
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:357)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:152)
+	... 2 more
