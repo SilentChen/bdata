@@ -19,9 +19,8 @@ storm.zookeeper.servers:
     - "bdata1"
     - "bdata2"
     - "bdata3"
-nimbus.seeds: ["bdata2", "bdata2", "bdata3"]
-# storm.local.dir=/data/bdata/storm
-# nimbus.seeds: ["host1", "host2", "host3"]
+ 
+nimbus.seeds: ["bdata1"]
 # 
 # 
 # ##### These may optionally be filled in:
